@@ -1,0 +1,90 @@
+@import '_normalize';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+body {
+  background-image: url("../images/camping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.3px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.h5, h5 {
+  padding-top: 9px;
+  font-size: 1.17rem;
+}
+
+.btn-primary {
+  letter-spacing: 1.5px;
+  padding: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  background-color: #2963a0;
+  border: none;
+}
+
+.btn-success {
+  letter-spacing: 1.5px;
+  padding: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  background-color: hsl(164, 39%, 54%);
+  border: none;
+}
+
+ul {
+  position: relative;
+  padding: 0px 30px 0px 30px;
+}
+
+.plIcons {
+  padding-left: 10px;
+}
+
+.deleteKnopje {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+li {
+  list-style: none;
+  padding: 3px;
+  display: inline-block;
+}
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0px solid #9A9A9A;
+  padding: 15px;
+  padding-left: 0px;
+  background-color: rgba(253, 252, 252, 0.92);
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+}
+
+#gastenFieldset {
+  display: none;
+  transition: 3s;
+}
+
+#gastenUl {
+  li {
+    display: list-item;
+    color: white;
+  }
+  span {
+    padding: 6px 12px;
+  }
+
+}

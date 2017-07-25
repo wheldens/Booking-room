@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BOOKING APP</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!-- css is styles en bootstrap layout -->
+<link rel="stylesheet" href="css/samen.css">
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <fieldset id="tijdHuisje">
+                <form>
+                    <ul>
+                        <h5>Datum en type huisje</h5>
+                        <hr>
+                        <li><label for="vanDag">Vanaf:</label></li>
+                        <br>
+                        <li><input type="date" id="vanDag" name="vanDag"></li>
+                        <br>
+                        <li><label for="totDag">Tot: </label></li>
+                        <br>
+                        <li><input type="date" id="totDag" name="totDag"></li>
+                        <br>
+
+                        <br>
+                        <li><select class="form-control" name="welkHuisje" id="welkHuisje">
+                            <option value="Kies uw type huisje" class="item" disabled selected="">Type huisje</option>
+                            <option value="Tent" class="item">Tent</option>
+                            <option value="Bungalow" class="item">Bungalow</option>
+                            <option value="Villa" class="item">Villa</option>
+                        </select>
+                        </li>
+                        <br><br>
+                        <li>
+                            <button class="btn btn-primary btn-sm" id="voegHuisjeToe">Selectie doorvoeren
+                        <li class="fa fa-chevron-right plIcons"></li>
+                        </button></li>
+                    </ul>
+            </fieldset>
+        </div>
+
+
+        <div class="col-lg-4">
+            <fieldset id="hoeveelPersonen">
+                <!-- maak persoon aan -->
+                <ul id="personenForm">
+                    <h5>Gegevens personen</h5>
+                    <hr>
+                    <li><select class="form-control" name="aanhef" id="aanHef">
+                        <option value="Aanhef" class="item" disabled selected="">Hr/Mvr</option>
+                        <option value="De heer " class="item">Meneer</option>
+                        <option value="Mevrouw " class="item">Mevrouw</option>
+                    </select>
+                    </li>
+                    <br>
+                    <li><label for="voorNaam">Voornaam:</label></li>
+                    <br>
+                    <li><input type="text" class="form-control" placeholder="Voornaam" id="voorNaam" name="voorNaam">
+                    </li>
+                    <br>
+                    <li><label for="achterNaam">Achternaam:</label></li>
+                    <br>
+                    <li><input type="text" class="form-control" placeholder="Achternaam" id="achterNaam"
+                               name="achterNaam"></li>
+                    <br>
+                    <li><label for="leefTijd">Leeftijd:</label></li>
+                    <br>
+                    <li><input type="number" class="form-control" name="leeftijd" id="leefTijd" min="1" max="100"></li>
+                    <br><br>
+                    <li>
+                        <button class="btn btn-primary btn-sm " id="voegPersoonToe">Voeg een persoon toe <i
+                                class="fa fa-user-plus plIcons"></i></button>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="gastenFieldset">
+                <div id="gastenDIV">
+                    <ul><h5>Personen</h5>
+                        <hr>
+                    </ul>
+                </div>
+            </fieldset>
+
+            </form><!-- einde /form maak uw resevering -->
+        </div><!-- einde /div maak uw resevering -->
+
+
+        <div class="col-lg-4">
+            <fieldset id="controleBoeking">
+                <ul><h5>Uw boeking</h5>
+                    <hr>
+                </ul>
+                <ul id="huisjeUl"></ul>
+                <ul id="controleBoekingUl"></ul>
+                <ul>
+                    <button class="btn btn-success btn-lg " id="submitKnop">Boek nu! <i
+                            class="fa fa-calendar-check-o plIcons"></i></button>
+                </ul>
+                <ul id="leeg"></ul>
+            </fieldset>
+        </div>
+
+        <!-- einde row -->
+
+    </div><!-- einde container -->
+</div><!-- einde container fluid -->
+<script src="js/samen.js"></script>
+
+</body>
+</html>
